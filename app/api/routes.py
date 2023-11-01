@@ -51,7 +51,7 @@ def update_entry(current_user_token, id):
     entry.name = request.json['name']
     entry.date = request.json['date']
     entry.cards = request.json['cards']
-    entry.jounral_entry = request.json['journal_entry']
+    entry.journal_entry = request.json['journal_entry']
     entry.user_token = current_user_token.token
     
     db.session.commit()
